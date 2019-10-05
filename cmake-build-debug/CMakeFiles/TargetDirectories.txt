@@ -1,0 +1,3 @@
+/Users/klewis/Documents/GitHub/INFO450FINDGOLD/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/klewis/Documents/GitHub/INFO450FINDGOLD/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/klewis/Documents/GitHub/INFO450FINDGOLD/cmake-build-debug/CMakeFiles/INFO450FINDGOLD.dir
