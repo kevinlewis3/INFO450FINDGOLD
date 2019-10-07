@@ -168,9 +168,6 @@ int populateArray(char guessArray[ROWS][COLUMNS])
 
 
 
-
-
-
 // This is where the brains of the game lives.
 int gameLogic(char guessArray[ROWS][COLUMNS])
 {
