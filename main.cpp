@@ -1,6 +1,6 @@
 #include <iostream>
 #include <time.h> // Used for seeding
-#include <iomanip>
+#include <iomanip> //added so I could utilize setw, which allows me to set the width of a field.
 
 using namespace std;
 
@@ -123,7 +123,8 @@ int populateArray(char guessArray[ROWS][COLUMNS])
 
 {
 
-    int x, y;
+    int x;
+    int y;
     int bombInputCounter = 0;
     int goldInputCounter = 0;
     srand(time(NULL)); // Using a seed to ensure everything is random
@@ -174,7 +175,8 @@ int populateArray(char guessArray[ROWS][COLUMNS])
 int gameLogic(char guessArray[ROWS][COLUMNS])
 {
     int points = 0;
-    int gRow, gColumn; // gRow = guessRow; gColumn = guessColumn
+    int gRow; //gRow = guessRow;
+    int gColumn; // gColumn = guessColumn
 
     do
     {
@@ -215,6 +217,7 @@ int gameLogic(char guessArray[ROWS][COLUMNS])
             guessArray[gRow][gColumn] = 'F';
             // This makes it so player knows where they found gold at the end of the game
             // Prevents player from cheating by guessing the same coordinate.
+
             points += 1; // Give player a point if they find gold!
             cout << endl;
             cout << endl;
